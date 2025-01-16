@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-image: url('tu.jpg'); /* Reemplaza con tu URL */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #A4C639;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #A4C639;
+        }
+
+        section p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            margin: 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Android</h1>
+    <nav>
+        <ul>
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#proposito">Propósito</a></li>
+            <li><a href="#contribucion">Contribución</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="que-es">
+    <h2>¿Qué es Android?</h2>
+    <p>Android es un sistema operativo móvil de código abierto desarrollado por Google, diseñado principalmente 
+        para dispositivos móviles como teléfonos inteligentes y tabletas. Basado en el núcleo de Linux, Android 
+        ofrece una plataforma flexible y personalizable para desarrolladores y usuarios. Sus características 
+        incluyen una interfaz de usuario intuitiva, compatibilidad con aplicaciones descargables a través de 
+        Google Play Store, y soporte para una amplia gama de hardware. Permite la integración con servicios
+         de Google como Gmail, Maps y Drive, facilitando la sincronización y acceso a información.
+    </p>
+</section>
+
+<section id="caracteristicas">
+    <h2>Características</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>Transparencia</h3>
+            <p>Android está basado en el proyecto Android Open Source Project (AOSP), lo que permite a los desarrolladores y fabricantes acceder al código fuente, analizarlo, modificarlo y adaptarlo.</p>
+        </div>
+        <div class="card">
+            <h3>Colaboración</h3>
+            <p>La naturaleza de código abierto ha impulsado una comunidad global que colabora en el desarrollo de nuevas funcionalidades, mejoras y soluciones.</p>
+        </div>
+        <div class="card">
+            <h3>Flexibilidad</h3>
+            <p>Los usuarios pueden personalizar la interfaz, widgets, temas y aplicaciones según sus preferencias, algo difícil de lograr en sistemas más cerrados.</p>
+        </div>
+        <div class="card">
+            <h3>Seguridad</h3>
+            <p>Android implementa actualizaciones periódicas para proteger a los dispositivos de amenazas.</p>
+        </div>
+        <div class="card">
+            <h3>Costos</h3>
+            <p>Android es gratuito para fabricantes, lo que permite ofrecer dispositivos con precios accesibles en el mercado.
+                Muchas aplicaciones en Google Play son gratuitas o tienen costos bajos en comparación con otros sistemas.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="proposito">
+    <h2>Propósito</h2>
+    <p>El objetivo principal de Android es proporcionar una plataforma abierta que permita a desarrolladores y fabricantes crear aplicaciones y dispositivos innovadores. Al ser de código abierto, facilita la adopción y adaptación del sistema operativo a una amplia variedad de hardware, promoviendo la diversidad y competencia en el mercado de dispositivos móviles.</p>
+    <p>Tipo de Licencia
+        La mayor parte del software de Android se distribuye bajo la Licencia Apache, Versión 2.0 (Apache 2.0), una licencia permisiva que permite a los desarrolladores utilizar, modificar y distribuir el código con pocas restricciones. 
+        </p>
+    <p>Requisitos para Contribuir
+        Para contribuir al Proyecto de Código Abierto de Android (AOSP), es necesario que los colaboradores deban firmar un acuerdo que define las condiciones para aportar código o documentación al AOSP, protegiendo tanto al colaborador como al proyecto. Existen acuerdos individuales y corporativos, según corresponda.
+        </p>
+</section>
+
+<section id="contribucion">
+    <h2>Contribución</h2>
+    <p> Falta de Detalle en APIs <br>
+        <ul>
+        <li> <p>Problema: La documentación de ciertas APIs no describe completamente cómo funcionan o qué limitaciones tienen. </p></li>
+        <li> <p>Impacto: Los desarrolladores pueden malinterpretar cómo usar una API o encontrar errores al intentar extender su funcionalidad. </p></li>
+        <li> <p>Ejemplo: La documentación de JobScheduler a menudo omite detalles importantes sobre restricciones en dispositivos con modos de ahorro de batería </p></li>
+        </ul>
+    </p>
+</section>
+
+</body>
+</html>
